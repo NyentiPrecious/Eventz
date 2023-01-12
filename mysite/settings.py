@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "django_fsm_log",
+    "subscriptions.apps.SubscriptionsConfig",
     'blog'
 ]
 
@@ -125,3 +127,31 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+CELERYBEAT_SCHEDULE = {
+    "subscriptions_renewals": {
+        "task": "subscriptions.tasks.trigger_renewals",
+        "schedule": crontab(hour=0, minute=10),
+    },
+    "subscriptions_expiring": {
+        "task": "subscriptions.tasks.trigger_expiring",
+        "schedule": crontab(hour=0, minute=15),
+    },
+    "subscriptions_suspended": {
+        "task": "subscriptions.tasks.trigger_suspended",
+        "schedule": crontab(hour="3,6,9", minute=30),
+    },
+    "subscriptions_suspended_timeout": {
+        "task": "subscriptions.tasks.trigger_suspended_timeout",
+        "schedule": crontab(hour=0, minute=40),
+        "kwargs": {"hours": 48},
+    },
+    "subscriptions_stuck": {
+        "task": "subscriptions.tasks.trigger_stuck",
+        "schedule": crontab(hour="*/2", minute=50),
+        "kwargs": {"hours": 2},
+    },
+}
