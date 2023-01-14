@@ -1,0 +1,958 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>COLOURSS</title>
+
+<!--EXTERNAL CSS-->
+
+<link rel="stylesheet" href="css/icon.css">
+<!-- <link rel="stylesheet" href="../static/css/fix.css"> -->
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet"> 
+<link href="{% static '../static/css/fix.css' %}" rel="stylesheet"/>
+<!--PLUGIN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+<body>
+
+
+
+
+
+
+
+<!--HEADER-->
+<header>
+<div class="banner">
+<span>
+<a href="emailname@.com"><em style="color:purple;">emailus</em>: HIIICOLOURSS@.com</a>
+<a href="tel:xxxxxxxxxx"><em style="color:purple;">callus</em>: XX-XXXX-XXXXX</a>
+</span>
+<span>
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</span>
+</div>
+<nav class="nav" id="nav">
+<a href="#" class="active">®<em>COLOURSS</em> <l style="font-weight:200;">|</l> </a>
+  <a href="#">CONTACT</a>
+
+<div class="dropdown">
+<button class="dropbtn">HOSTING</button>
+<div class="dropdown-content">
+<a href="#">WORDPRESS</a>
+<a href="#">WINDOWS</a>
+<a href="#">LINUX</a>
+</div>
+</div> 
+<a href="#">ABOUT</a>
+<div class="notification">
+  <!-- the viewBox is 79x79 due to
+      - the size of the graphic, 65x75
+      - the stroke width, 4x4
+      - the empty space included on either side of the graphic to avoid cropping when rotating the bell's shape 10x0
+  -->
+  <svg class="notification__bell" viewBox="0 0 79 79" width="79" height="79">
+      <!-- group to apply default styles -->
+      <g
+          stroke="currentColor"
+          stroke-width="4">
+          <!-- group to translate the graphic enough to avoid cropping of the stroke -->
+          <g transform="translate(2 2)">
+              <!-- group to center the elements in the 75x75 box allocated to the bell
+              ! the group also modifies the transform-origin for the nested elements, which will be rotated from the center of the graphic
+              -->
+              <g transform="translate(37.5 0)">
+                  <circle
+                      cx="0"
+                      cy="8"
+                      r="8">
+                  </circle>
+                  <!-- circle animated alongside the bell
+                  ! the rotation occurs from the point described by the parent group
+                  -->
+                  <circle
+                      class="bell__clapper"
+                      cx="0"
+                      cy="63"
+                      r="12">
+                  </circle>
+                  <!-- bell shape
+                  ! the rotation occurs from the point described by the parent group
+                  -->
+                  <path
+                      class="bell__body"
+                      stroke-linejoin="round"
+                      d="M 0 8 a 25 25 0 0 1 25 25 v 17 l 5 6 q 3 7 -6 7 h -48 q -9 0 -6 -7 l 5 -6 v -17 a 25 25 0 0 1 25 -25">
+                  </path>
+              </g>
+          </g>
+      </g>
+  </svg>
+
+  <div class="notification__message message--info">
+      <h1>Info</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+      <!-- x icon through a path element -->
+      <button aria-labelledby="button-dismiss">
+          <span id="button-dismiss" hidden>Dismiss</span>
+          <svg viewBox="0 0 100 100" width="10" height="10">
+              <!-- group to style the path -->
+              <g
+                  stroke="currentColor"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none">
+                  <!-- group to center and rotate the + sign to show an x sign instead -->
+                  <g transform="translate(50 50) rotate(45)">
+                      <!-- path describing two perpendicular lines -->
+                      <path
+                          d="M 0 -30 v 60 z M -30 0 h 60">
+                      </path>
+                  </g>
+              </g>
+          </svg>
+      </button>
+  </div>
+</div>
+<a href="#" style="float:right;padding:10px 0;"><i class="fa fa-user"></i> LOGIN</a>
+<a class="icon" id="icon" onclick="opennav()"><i class="fa fa-bars"></i></a>
+</nav>
+
+<div id="navbar">
+<a href="#" class="active">®<em>COLOURSS</em> <l style="font-weight:200;">|</l></a>
+<a href="#"><i class="fa fa-user"></i> LOGIN</a>
+<div class="dropdown">
+<button class="dropbtn">HOSTING</button>
+<div class="dropdown-content">
+<a href="#">WORDPRESS</a>
+<a href="#">WINDOWS</a>
+<a href="#">LINUX</a>
+</div>
+</div> 
+<a href="#">CONTACT</a>
+<a href="#">ABOUT</a>
+</div>
+</header>
+
+
+
+
+
+<!--CONTAINER-->
+<div class="container">
+<table>
+<tr>
+<td>
+<section>
+<em>WELCOME TO COLOURSS</em>
+<h1 class="title ml9">
+<span class="text-wrapper">
+<span class="letters">Filled with Love & genuity</span>
+</span>
+</h1>
+<h5 class="sub-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores recusandae est digniss mollitia, iste debitis hic velit temporibus esse dolor.</h5>
+<a href="#" class="btn1">Explore together with us</a>
+</section>
+</td>
+<td>
+<img src="https://assets.codepen.io/285131/illustration-2.svg" alt="">
+</td>
+</tr>
+</table>
+
+
+<!-- <div class="ag-bonus-block">
+  <div style="margin-top: 6rem;" class="ag-format-container">
+
+  </div>
+</div> -->
+
+
+</div>
+<!-- <div class="container-fliud">
+ 
+  <div class="ocean">
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+              </div>
+  </div> -->
+
+
+  
+
+  <script>
+    (function ($) {
+  $(function () {
+
+    
+
+  });
+})(jQuery);
+  </script>
+
+<div class="div" onload="countDown()">
+  <div class="container1">
+      <h1>Bangladesh Victory Day <span id="year"></span></h1>
+
+      <div class="timers">
+          <div class="timer">
+              <div><span id="day"></span> Day</div>
+          </div>
+          <div class="timer">
+              <div><span id="hour"></span> Hour</div>
+          </div>
+          <div class="timer">
+              <div><span id="min"></span> Minute</div>
+          </div>
+          <div class="timer">
+              <div><span id="sec"></span> Second</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!--SECTION1-->
+<section class="section1">
+<!--******PRICE CARDS******-->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@300&family=Recursive:wght@500&display=swap" rel="stylesheet">  
+
+<div class="price_cards">
+<!--CARD_BEGINING-->
+<div class="card card_1">
+<img src="https://i.ibb.co/BCRGYmx/bronze.png" class="badge" alt="STATER">
+<h1 class="title">Professional</h1>
+<span class="sub-title">$2,000 por año</span>
+<section>
+<ul>
+<li>25GB disco NVMe</li>
+<li>25GB JetBackup</li>
+</ul>
+<button class="btn1">Ver Detalles</button>
+</section>
+</div>
+<!--CARD_ENDS-->
+<!--CARD_BEGINING-->
+<div class="card card_2">
+<img src="https://i.ibb.co/DQR0Mzt/silver.png" class="badge" alt="PREMIUM">
+<h1 class="title">Premium</h1>
+<span class="sub-title">$2,000 por año</span>
+<section>
+<ul>
+<li>25GB disco NVMe</li>
+<li>25GB JetBackup</li>
+</ul>
+<button class="btn1">Ver Detalles</button>
+</section>
+</div>
+<!--CARD_ENDS-->
+<!--CARD_BEGINING-->
+<div class="card card_3">
+<img src="https://i.ibb.co/Nmh4LR0/gold.png" class="badge" alt="UNLIMITED">
+<h1 class="title">Unlimited</h1>
+<span class="sub-title">$2,000 por año</span>
+<section>
+<ul>
+<li>25GB disco NVMe</li>
+<li>25GB JetBackup</li>
+</ul>
+<button class="btn1">Ver Detalles</button>
+</section>
+</div>
+<!--CARD_ENDS-->
+</div>
+</section>
+
+
+<!--For Dark theme layout-->
+  
+<section>
+  <div class="movie-slide">
+<div class= "container-title">Past&nbsp;
+  <span style="color: #7149c7">Events</span>
+</div>
+
+<div class= "movie-box">
+
+  <div class= "movie-info">
+      <img alt="movie poster" src="https://iili.io/8whTMv.jpg">
+    <div class= "movie-name">Brahmastra part 1: Shiva</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>9.1/10 </div>
+  </div>
+  
+  <div class= "movie-info">
+      <img alt="movie poster" src="https://iili.io/8wXgyX.jpg">
+    <div class= "movie-name">Bachchan Pandey</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>7.5/10</div>
+  </div>
+
+  <div class= "movie-info">
+      <img alt="movie poster" src="https://iili.io/8wh2Mx.jpg">
+    <div class= "movie-name">Brahmastra part 1: Shiva</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>9.1/10</div>
+  </div>
+  
+  <div class= "movie-info">
+      <img alt="movie poster" src="https://iili.io/8wh36Q.jpg" style="object-fit: fill;">
+    <div class= "movie-name">KGF Chapter 2 (2022)</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>8.8/10</div>
+  </div>
+  
+    <div class= "movie-info">
+        <img alt="movie poster" src="https://iili.io/8whdnj.jpg">
+    <div class= "movie-name">Laal Singh Chaddha</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>8.1/10</div>
+  </div>
+  
+  
+  <div class= "movie-info">
+      <img alt="movie poster" src="https://iili.io/y7waOg.md.jpg">
+    <div class= "movie-name">Doctor G</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>7.5/10</div>
+  </div>
+
+  
+</div>
+</div>
+  
+<div class="all-btn" style="">
+<a href="#" style="color: white; text-decoration-line: none; ">ALL Events
+</a>
+</div>
+
+</section>
+
+<section>
+  <div class="movie-slide" style="background: #000; color: #fff; width: 100vw; " >
+<div class= "container-title">Recent&nbsp;
+  <span style="color: #7149c7">Events</span>
+</div>
+
+<div class= "movie-box">
+
+  <div class= "movie-info">
+      <img alt="movie poster" src="/images/1.png">
+    <div class= "movie-name">Brahmastra part 1: Shiva</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>9.1/10 </div>
+  </div>
+  
+  <div class= "movie-info">
+      <img alt="movie poster" src="/images/PXL_20221112_142934922.jpg">
+    <div class= "movie-name">Bachchan Pandey</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>7.5/10</div>
+  </div>
+
+  <div class= "movie-info">
+      <img alt="movie poster" src="/images/PXL_20221112_142615135.PORTRAIT.jpg">
+    <div class= "movie-name">Brahmastra part 1: Shiva</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>9.1/10</div>
+  </div>
+  
+  <div class= "movie-info">
+      <img alt="movie poster" src="https://iili.io/8wh36Q.jpg" style="">
+    <div class= "movie-name">KGF Chapter 2 (2022)</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>8.8/10</div>
+  </div>
+  
+    <div class= "movie-info">
+        <img alt="movie poster" src="https://iili.io/8whdnj.jpg">
+    <div class= "movie-name">Laal Singh Chaddha</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>8.1/10</div>
+  </div>
+  
+  
+  <div class= "movie-info">
+      <img alt="movie poster" src="https://iili.io/y7waOg.md.jpg">
+    <div class= "movie-name">Doctor G</div>
+    <div class= "review"><i class="fa-solid fa-heart"></i>7.5/10</div>
+  </div>
+
+  
+</div>
+</div>
+  
+<div class="all-btn" style="">
+<a href="#" style="color: white; text-decoration-line: none; ">ALL Events
+</a>
+</div>
+
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+
+<!--SECTION2-->
+<section style="background-color: white;" class="section2">
+<div class="title_header">
+
+<div class="ag-bonus_title-list">
+  Previous<br/>Events
+</div>
+
+</div>
+
+<div class="cards">
+  <ul class="honeycomb">
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/PXL_20221112_142934922.jpg" alt="">
+          <span class="title">TITLE</span>
+          <span class="text">One text box</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/PXL_20221112_142930175.jpg" alt="">
+          <span class="title">TITLE</span>
+          <span class="text">One text box</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/PXL_20221112_142615135.PORTRAIT.jpg" alt="">
+          <span class="title">TITLE</span>
+          <span class="text">One text box</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/PXL_20221112_142439438.PORTRAIT.jpg" alt="">
+          <span class="title">TITLE</span>
+          <span class="text">One text box</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/PXL_20221112_142353246.PORTRAIT.jpg" alt="">
+          <span class="title">TITLE</span>
+          <span class="text">One text box</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/PXL_20221112_142344767.PORTRAIT.jpg" alt="">
+          <span class="title">Honeycomb Gallery</span>
+          <span class="text">by Steyra</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/PXL_20221028_134210185.PORTRAIT.jpg" alt="">
+          <span class="title">TITLE</span>
+          <span class="text">One text box</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/PXL_20221028_133350070.jpg" alt="">
+          <span class="title">TITLE</span>
+          <span class="text">One text box</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/PXL_20221028_133350070.jpg" alt="">
+          <span class="title">TITLE</span>
+          <span class="text">One text box</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/PXL_20221028_123121805.jpg" alt="">
+          <span class="title">TITLE</span>
+          <span class="text">One text box</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div class="cell">
+        <a href="#">
+          <img src="/images/5.jpg" alt="">
+          <span class="title">TITLE</span>
+          <span class="text">One text box</span>
+        </a>
+      </div>
+    </li>
+  </ul>
+
+
+</div>
+</section>
+
+
+
+<div class="map">
+  <div id="map"></div>
+</div>
+
+
+
+<!--SECTION3-->
+
+
+
+<div class="product__resources ">
+  <div class="product__cont">
+    <div class="ag-bonus_title-list">
+      Check Out<br/>Our Blog
+    </div>
+    <!--- START ITEM ---->
+    <div class="product__resources__item">
+      <div style="background: url('https://www.desertfinancial.com//-/media/desert-financial/lc-test/lc-800x300-5-golden-rules-to-buying-a-new-car.ashx') no-repeat center left;" class="product__resources__item__img"></div>
+      <h3>Golden Rules  </h3>
+      <p>What you should know before visiting a showroom or going on a test .</p>
+      <a href="/news-and-knowledge/articles/car-buying-101" target="_blank" class="article-Button">READ THE RULES</a>
+    </div>
+    <!--- EMD ITEM ---->
+    <!--- START ITEM ---->
+    <div class="product__resources__item">
+      <div style="background: url('https://www.desertfinancial.com/-/media/desert-financial/lc-test/lc-800x300-whats-the-best-deal--a-new-car-or-a-used-car.ashx') no-repeat center center;" class="product__resources__item__img"></div>
+      <h3>What's Best: New or Used? </h3>
+      <p>Choosing a new or used car depends upon what you consider important. </p>
+      <a href="/news-and-knowledge/articles/new-vs-used-car" target="_blank" class="article-Button"> TAKE THE QUIZ</a>
+    </div>
+    <!--- EMD ITEM ---->
+    <!--- START ITEM ---->
+    <div class="product__resources__item">
+      <div style="background: url('https://www.desertfinancial.com/-/media/desert-financial/learning-center-banner/paid4sweepstakes-lca-707x230-refi2-v1.ashx') no-repeat center center;" class="product__resources__item__img"></div>
+      <h3>5 Reasons to Refi Your Auto Loan </h3>
+      <p>Refinancing your car, truck or SUV could have some sweet benefits.</p>
+      <a href="" target="_blank" class="article-Button">LEARN MORE</a>
+    </div>
+    <!--- EMD ITEM ---->
+
+  </div>
+  <div class="clear"></div>
+</div>
+
+
+
+<!-- 
+newsletter section -->
+
+
+<div class="parent-wrapper">
+  <span class="close-btn glyphicon glyphicon-remove"></span>
+  <div class="subscribe-wrapper">
+    <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+    <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail">
+    <div class="submit-btn">SUBMIT</div>
+  </div>
+</div>
+<!-- </section> -->
+
+
+
+
+
+
+<!--FOOTER-->
+
+
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOVRTzClCZIK37o28OfnZ_7ukciHE4eJI&callback=initMap" async defer></script>
+
+
+<footer>
+<div class="footer">
+<div class="row">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Packages</a></li>
+</ul>
+</div>
+
+<div class="row">
+Copyright © 2023 COLOURSS - All rights reserved
+</div>
+</div>
+</footer>
+<div id="backToTop"></div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+
+<script>
+  const selectWritingMode = document.getElementById("writing-mode");
+
+selectWritingMode.addEventListener("change", () => {
+  document.documentElement.style.setProperty(
+    "--direction",
+    selectWritingMode.value
+  );
+});
+
+</script>
+
+
+
+
+<!-- countdown -->
+
+<script>
+  function countDown(){
+    let today = new Date();
+    let vDate = new Date(today.getFullYear(), 11, 16);
+    const t = vDate.getTime() - today.getTime()
+
+    const day = Math.floor(t / (1000*60*60*24));
+    const hour = Math.floor(((t) % (1000*60*60*24)) / (1000*60*60));
+    const minute = Math.floor(((t) % (1000*60*60)) / (1000*60));
+    const sec = Math.floor(((t) % (1000*60)) / (1000));
+    
+    document.getElementById('year').innerText = today.getFullYear()
+    document.getElementById('day').innerText = day
+    document.getElementById('hour').innerText = hour
+    document.getElementById('min').innerText = minute
+    document.getElementById('sec').innerText = sec
+
+    if(t <= 0 ){
+        clearTimeout(counter)
+        document.querySelector('timers').innerText = 'Expired'
+    }
+}
+
+setInterval(countDown ,1000)
+</script>
+
+
+<!-- end of countdown -->
+
+
+<!-- back to top -->
+
+<script>
+ jQuery(document).ready(function(){
+//   insert back to top button dynamicly
+ $( "#backToTop" ).append('<a class="backToTop" href="javascript:void(null);" style="display: none;"><i class="fa fa-angle-up"></i><iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></a>');
+  var $window = $(window);
+  var distance = 80;
+    // scroll
+  $window.scroll(function() {
+    // header
+    if($window.scrollTop() >= distance) {
+      $(".backToTop").fadeIn();
+    }else{
+      $(".backToTop").fadeOut();
+    }
+  });
+  
+  $('.backToTop').click(function() {
+    $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+ });
+})
+</script>
+
+<!-- end of back to top -->
+
+
+<script>
+  function initMap() {
+  // Styles a map in night mode.
+  var map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 53.3278849, lng: -6.39846579999994 },
+    zoom: 12,
+    styles: [
+      { elementType: "geometry", stylers: [{ color: "#000000" }] },
+      { elementType: "labels.text.stroke", stylers: [{ color: "#8e62dc" }] },
+      { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+      {
+        featureType: "administrative.locality",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }]
+      },
+      {
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }]
+      },
+      {
+        featureType: "poi.park",
+        elementType: "geometry",
+        stylers: [{ color: "#263c3f" }]
+      },
+      {
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#6b9a76" }]
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [{ color: "#38414e" }]
+      },
+      {
+        featureType: "road",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#212a37" }]
+      },
+      {
+        featureType: "road",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#9ca5b3" }]
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [{ color: "#746855" }]
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#1f2835" }]
+      },
+      {
+        featureType: "road.highway",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#f3d19c" }]
+      },
+      {
+        featureType: "transit",
+        elementType: "geometry",
+        stylers: [{ color: "#2f3948" }]
+      },
+      {
+        featureType: "transit.station",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }]
+      },
+      {
+        featureType: "water",
+        elementType: "geometry",
+        stylers: [{ color: "#17263c" }]
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#515c6d" }]
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.stroke",
+        stylers: [{ color: "#17263c" }]
+      }
+    ]
+  });
+}
+
+</script>
+
+
+<script>
+  // utility function returning a random item from the input array
+const randomItem = arr => arr[Math.floor(Math.random() * arr.length)];
+
+// possible values for the message title and modifier
+const messageTitle = [
+  'info',
+  'success',
+  'warning',
+  'danger',
+];
+
+// possible values for the body of the message
+// end result of the emmet shortcut p*10>lorem10
+const messageText = [
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quaerat.',
+  'Ab asperiores inventore tempora maiores, est et magni harum maxime?',
+  'Laboriosam, vel maxime. Doloremque saepe aut quis mollitia corporis illo?',
+  'Cum eum magnam facere commodi quae voluptate suscipit doloribus architecto?',
+  'Ipsa veniam tempora necessitatibus corporis voluptate nobis, ut quam magni.',
+  'Veritatis obcaecati non dolorum vero? Ipsam aperiam optio sint dicta.',
+  'Itaque quod amet a. Voluptate nostrum temporibus ipsa explicabo exercitationem.',
+  'Quasi veritatis inventore mollitia ipsum, aut voluptatibus suscipit a labore.',
+  'Iusto alias eius quae ducimus quibusdam veniam sint soluta nam!',
+  'Corrupti temporibus sequi laboriosam alias magni? Nam consectetur amet odit!'
+];
+
+/* logic
+- create a message
+- show the message
+- allow to dismiss the message through the dismiss button
+
+once the message is dismissed the idea is to go through the loop one more time, with a different title and text values
+*/
+const notification = document.querySelector('.notification');
+
+// function called when the button to dismiss the message is clicked
+function dismissMessage() {
+  // remove the .received class from the .notification widget
+  notification.classList.remove('received');
+
+  // call the generateMessage function to show another message after a brief delay
+  generateMessage();
+}
+
+// function showing the message
+function showMessage() {
+  // add a class of .received to the .notification container
+  notification.classList.add('received');
+
+  // attach an event listener on the button to dismiss the message
+  // include the once flag to have the button register the click only one time
+  const button = document.querySelector('.notification__message button');
+  button.addEventListener('click', dismissMessage, { once: true });
+}
+
+// function generating a message with a random title and text
+function generateMessage() {
+  // after an arbitrary and brief delay create the message and call the function to show the element
+  const delay = Math.floor(Math.random() * 1000) + 1500;
+  const timeoutID = setTimeout(() => {
+    // retrieve a random value from the two arrays
+    const title = randomItem(messageTitle);
+    const text = randomItem(messageText);
+
+    // update the message with the random values and changing the class name to the title's option
+    const message = document.querySelector('.notification__message');
+
+    message.querySelector('h1').textContent = title;
+    message.querySelector('p').textContent = text;
+    message.className = `notification__message message--${title}`;
+
+    // call the function to show the message
+    showMessage();
+    clearTimeout(timeoutID);
+  }, delay);
+}
+
+// immediately call the generateMessage function to kickstart the loop
+generateMessage();
+</script>
+
+<!--JAVASCRIPT-->
+<script>
+
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //NAVIGATION
+
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (window.matchMedia('screen and (max-width: 768px)').matches){
+
+  }else{
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("nav").style.display = "none";
+  }} else {
+  if (window.matchMedia('screen and (max-width: 768px)').matches){
+
+  }else{
+    document.getElementById("navbar").style.top = "-85px";
+    document.getElementById("nav").style.display = "block";
+    }
+  }
+}
+
+var count=0;
+function opennav(){
+if(count==0){
+document.getElementById("nav").style.height="240px";
+document.getElementById("icon").style.color="#3399ff";
+count++;
+}else{
+document.getElementById("nav").style.height="45px";
+document.getElementById("icon").style.color="#000";
+count=0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
